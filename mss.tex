@@ -2,52 +2,65 @@
 
 \usepackage{ustj}
 
-\newcommand{\authorname}{N. E. Davis}
-\newcommand{\authorpatp}{\patp{lagrev-nocfep}}
-\newcommand{\affiliation}{Urbit Foundation}
-
-%  Make first page footer:
-\fancypagestyle{firststyle}{%
-\fancyhf{}% Clear header/footer
-\fancyhead{}
-\fancyfoot[L]{{\footnotesize
-              %% We toggle between these:
-              % Manuscript submitted for review.\\
-              {\it Urbit Systems Technical Journal} I:1 (2024):  1. \\
-              ~ \\
-              Address editorial correspondence to \authorpatp.
-              }}
-}
-%  Arrange subsequent pages:
 \fancyhf{}
-\fancyhead[LE]{{\urbitfont Urbit Systems Technical Journal}}
-\fancyhead[RO]{Letter from the Editor}
-\fancyfoot[LE,RO]{\thepage}
+\fancyhead{}
+\fancyfoot{}
 
 %%MANUSCRIPT
-\title{From the Editor}
-\author{\authorname~\authorpatp \\ \affiliation}
+\title{}
+\author{}
 \date{}
 
 \begin{document}
+\thispagestyle{empty}
 
-%\maketitle
-\thispagestyle{firststyle}
+\newpage\mbox{}\\
+\thispagestyle{empty}
+half-title \\
+Urbit Systems \\
+Technical Journal
+\newpage\mbox{}\\
+\thispagestyle{empty}
+\newpage\mbox{}\\
+\thispagestyle{empty}
+title/toc
+\newpage\mbox{}\\
+\thispagestyle{empty}
 
-% We will adjust page numbering in final editing.
-\pagenumbering{arabic}
-\setcounter{page}{1}
+\noindent
+Copyright © 2024 {\resizebox{!}{\heightof{T}}{\includegraphics{26_UrbitOS}}} Urbit Foundation and individual authors.
 
-Welcome to the inaugural issue of the \emph{Urbit Systems Technical Journal:  The Journal of Solid-State Computing}.  The core developers of Urbit from 2013 onwards have done yeoman's work in specifying and producing a novel and inventive system, one that implements and explores dozens of new concepts in computer science.  By and large, Urbit has functioned as an event horizon—when someone is convicted by the project's ambition, they are drawn in and their work becomes less visible to the broader software development community.  \textsc{ustj} will change that by showcasing our travails, challenges, and triumphs.
+\vspace{{\heightof{T}}}
+\noindent
+Chief Editor \patp{lagrev-nocfep}, Urbit Foundation.
 
-We've wanted to write about Urbit for years.  It never felt like the timing was right for the effort of producing a classical reference or textbook:  Urbit was too hot (in the kelvin sense) and some of the prodigious work of producing a volume would have to be repeated for every system release.  There are deep and true things that can be said about the platonic Urbit, the diamond Urbit, but much of what we are working through now is a contingent Urbit, feeling our way towards zero kelvin.  A technical journal is more forgiving in all the senses we want:  it is time-resolved; it is episodic; and it allows deep rabbit holes that would never fit in a book.  Rather than compromise for a textbook, we can instead find ways to start saying every important technical thing about Urbit and solid-state computing.
+\vspace{{\heightof{T}}}
+\noindent
+First paperback edition April 2024.
 
-\textsc{ustj} will follow a permissive dictum:  “Therefore every \linebreak scribe which is instructed unto the kingdom of heaven is like unto a man that is an householder, which bringeth forth out of his treasure things new and old” (Matthew \emph{xiii} 52).  In these pages you will read groundbreaking new work as well as well-considered expositions from Urbit's development.  Note as well the plural in the title.  Deterministic computing and secure computing are all larger fields than Urbit alone.
+\noindent
+\textcolor{white}{{\sc issn}}
 
-Many have contributed, not least the authors of the code and articles.  I would particularly like to thank \patp{mopfel-winrux} for his early enthusiasm for the concept of \textsc{ustj}; \patp{wolref-podlex} for paving the way; each contributor, reviewer, and designer; and Simon DeDeo, who first suggested to us the idea of a technical journal.
 
-Computer science happens in the trenches.  \tombstone{}
+\vspace{{\heightof{T}}}
+{\centering
+\urbitfont{{urbitsystems.tech}} \\
+\urbitfont{{urbit.org}} \\
+}
+\vfill{}
+
+\noindent
+Published by West Martian Limited Company, Cheyenne, Wyoming.
+
+\vspace{{\heightof{T}}}
+\noindent
+{\centering
+\includegraphics[width=2.54cm]{wmlc-logo-bw} \\
+}
+
+\vspace{{\heightof{T}}}
+{\centering
+{www.westmartian.com} \\
+}
+
 \end{document}
-
-% Issue 2:  When I first encountered Urbit, it was like Mr Electrico touching twelve-year-old Ray Bradbury with a charged sword and commanding him to “live forever!”
-% Exit the only game in town.

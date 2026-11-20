@@ -112,7 +112,7 @@
 
 
 \usepackage{titlesec}
-\newfontfamily\urbitfont{Urbit Sans TT SemiBold}
+\newfontfamily\urbitfont{Urbit Sans TT}
 \titleformat{\section}{\urbitfont\Large\bfseries}{\thesection}{1em}{}
 \titleformat{\subsection}{\urbitfont\Large\bfseries}{\thesubsection}{1em}{}
 \usepackage{titling}
@@ -121,7 +121,7 @@
 \AtBeginDocument{\renewcommand{\abstractname}{}}
 
 %% Page size
-\usepackage[paperheight=8.5in,paperwidth=5.5in,margin=1in,heightrounded,showframe]{geometry}
+\usepackage[paperheight=8.5in,paperwidth=5.5in,margin=1in,heightrounded]{geometry}
 
 %% Configure first-page footer and later-page header.
 \usepackage{fancyhdr}
@@ -133,8 +133,8 @@
 \newcommand{\github}[1]{\texttt{@#1}}
 
 % Turn off when producing release version.
-\usepackage{lineno}
-\linenumbers
+% \usepackage{lineno}
+% \linenumbers
 
 % Bibliography management
 \usepackage[
